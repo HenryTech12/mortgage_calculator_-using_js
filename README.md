@@ -76,7 +76,7 @@ Setup Instructions
 Replace the placeholder key and endpoint in script.js with your actual API details:
 
 const key = 'YOUR_API_KEY';
-const url = 'https://api.example.com/interest-rates';
+const url = 'https://api.api-ninjas.com/v1/mortgagecalculator?loan_amount=3000000&interest_rate=5.25&duration_years=25';
 
 
 
