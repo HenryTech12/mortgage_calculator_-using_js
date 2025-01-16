@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <!-- Project -->
+  <main class="container">
+    <div class="content">
+     <header>
+       <h2>Mortgage Calculator</h2>
+       <a onclick="resetAll()">Clear all</a>
+       <span class="error"></span>
+     </header>  
+  
+     <section class="fields">
+     
+       <section class="field-content">
+         <label>Mortgage Amount</label>
+         <section class="field">
+           <span class="material-symbols-outlined symbol">euro_symbol</span>
+           <input type="text" class="amount" id="lamount">
+         </section>
+       </section>
+       
+      <section class="field-content">
+         <label>Mortgage Term</label>
+         <section class="field">
+           <input type="text" id="term" placeholder="30" class="max">
+           <span class="label-btn">years</span>
+         </section>
+       </section>
+       
+       <section class="field-content">
+         <label>Interest Rate</label>
+         <section class="field">
+           <input type="text" id="interest" placeholder="10" required class="max">
+           <span class="label-btn">%</span>
+         </section>
+       </section>
+     
+      <section class="field-content type">
+         <label>Mortgage Type</label>
+         <button class="repay">
+            <input type="radio" class="checkbox" name="box">
+            <span>Repayment</span>
+         </button>
+         
+         <button class="repay">
+            <input type="radio" class="checkbox" name="box">
+            <span>Interests Only</span>
+         </button>
+       </section>
+       
+       <button class="calculate" onclick="calculate()">
+         <span class="material-symbols-outlined calc">calculate</span>
+         <span id="value">Calculate Repayments</span>
+       </button>
+     </section>
+     
+     
+     <section class="footer">
+       <img src="/assets/images/school-1555910_1280.png" width="200" height="200" class="img" class="show">
+       <p class="plabel">
+         Your results are shown based on the information you provided. To adjust the results, edit the form and click 'calculate repayments' again.
+       </p>
+       
+       <section class="popup">
+         <section class="status">
+           <label>STATUS: </label>
+           <span id="status"></span>
+         </section>
+         <section class="rmonth" id="rmonth">
+           <label>Your monthly repayments</label>
+           <section class="picon">
+             <span class="material-symbols-outlined">euro_symbol</span>
+               <span id="monthly">0</span>
+           </section>
+        
+         </section>
+         <div class="l"></div>
+         
+         <section>
+           <label>Total you will repay over the term</label>
+           <section class="picon">
+             <span class="material-symbols-outlined">euro_symbol</span>
+             <span id="total">0</span>
+           </section>
+         </section>
+         
+       </section>
+       <div>
+        <h3 class="show">Results shows here.</h3>
+        <p class="show">"Click Repayment to see what your monthly repayment would be. Ensure all required inputs are filled before proceeding."
+        </p>
+       </div>
+     </section>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

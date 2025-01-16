@@ -1,0 +1,270 @@
+/* CSS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+VN:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* || CSS RESET */
+* , *::before , *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  margin: 0rem;
+}
+.content header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Playwrite VN';
+  margin: 1rem;
+}
+.content header a  {
+  text-decoration: underline;
+  font-family: 'Titillium Web';
+  transition: all 0.8s;
+}
+.content header a:visited {
+  color: #3BE999;
+}
+
+/* STYLE ALL INPUT AND LABEL IN COLUMN FORMAT*/
+.fields {
+  display: flex;
+  flex-direction: column; /*set all content to column*/
+  justify-content: center;
+  margin-top: 0.8rem;
+  margin: 1rem;
+}
+.field-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.field-content label {
+  color: #547BBA;
+  font-family: 'Kanit';
+}
+.field {
+  display: flex;
+}
+.fields section:first-child input {
+  
+  border: none;
+  outline: none;
+  border: 1px solid black;
+}
+.fields section:nth-child(n+2) .field input {
+  outline: none;
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: 1px solid black;
+  border-right: none;
+}
+.label-btn {
+  height: 2.5rem;
+  width: 50px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: 1px solid black;
+  display: block;
+  vertical-align: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1rem;
+  background: #3BE999;
+  font-family: 'Jura';
+}
+.symbol {
+  height: 2.5rem;
+  width: 50px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: 1px solid black;
+  display: block;
+  vertical-align: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1rem;
+  background: #3BE999;
+  border-right: none;
+}
+.field .amount {
+  border-left: none;
+  display: block;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+input[type=text] {
+  height: 2.5rem;
+  width: 100%;
+  font-family: 'Titillium Web';
+  padding-left: 10px;
+}
+.type button {
+  height: 2.7rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bolder;
+  font-size: 1rem;
+  vertical-align: center;
+  background-blend-mode: multiply;
+  align-content: center;
+  background: transparent;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  border: 1px solid darkgray;
+  transition: all 0.8s;
+  cursor: pointer;
+  font-family: 'Jura';
+}
+.type .checkbox {
+  margin-left: 0.4rem;
+  accent-color: lightblue;
+  transition: all 1.2s;
+}
+.calculate {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2.7rem;
+  border-radius: 25px;
+  border: none;
+  background: transparent;
+  font-family: 'Titillium Web';
+  outline: none;
+  width: 80%;
+  margin: 0 auto;
+  border: 4px dotted #3B3D5A;
+}
+.calculate .calc {
+  display: block;
+  color: red;
+  font-size: 3rem;
+}
+/* STYLE FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  text-align: center;
+  background: #3B3D5A;
+  margin-top: 0.8rem;
+}
+.footer h3 {
+  font-size: 2.2rem;
+  font-family: 'Playwrite VN';
+}
+.footer div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+}
+.footer p {
+  font-family: 'Titillium Web';
+  color: whitesmoke;
+  margin: 0 2rem 1rem 2rem;
+}
+.footer img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+}
+/* STYLE POPUP */
+.popup {
+  width: 90%;
+  max-width: 400px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 200px;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0px 0px 16px 0px darkgray;
+  backdrop-filter: blur(10px);
+  padding: 0 0.8rem;
+  transition: all 0.8s;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+.popup label {
+  font-family: 'Kanit';
+  font-weight: bolder;
+  color: white;
+  font-size: 1.2rem;
+  overflow-wrap: break-word;
+}
+.popup .picon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.popup section:first-child .picon span {
+  color: orange;
+} 
+.popup .picon span {
+  display: block;
+  font-size: 4rem;
+}
+.plabel {
+  font-size: 1.3rem;
+  font-family: 'Titillium Web';
+  margin-top: 1rem;
+}
+.l {
+  border-bottom: 2px solid white;
+  width: 100%;
+  display: block;
+  margin: 0.5rem auto;
+}
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+}
+.status label {
+  color: green;
+  font-size: 2rem;
+}
+.status span {
+  display: inline-block;
+  font-size: 2rem;
+  color: transparent;
+ -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color: green;
+}
+.error {
+  color: red;
+  font-style: italic;
+  display: block;
+  font-family: 'Kanit';
+  margin-top: 1rem;
+  transition: all 0.8s;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 600px;
+    width: 90%;
+    height:auto;
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 8px 16px 0px lightgray;
+    backdrop-filter: blur(5px);
+  }
+}
