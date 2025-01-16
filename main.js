@@ -45,7 +45,7 @@ let loan_amount = document.getElementById('lamount');
 
 let interest_rate = document.getElementById('interest');
 let term = document.getElementById('term');
-let key = '/fyhCGzh5wq02OTpymyndQ==hjWBmE0jsZTYvbxO';
+let key = '<YOUR API KEY>';
 
 
 let m_total = document.getElementById('monthly');
